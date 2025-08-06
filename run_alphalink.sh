@@ -14,14 +14,14 @@ python /apps/AlphaLink/AlphaLink2/unifold/homo_search.py \
     --fasta_path=$fasta_path \
     --max_template_date=$max_template_date \
     --output_dir=$output_dir_base  \
-    --uniref90_database_path=$database_dir/AF3/uniref90_2022_05.fa \
-    --mgnify_database_path=$database_dir/AF3/mgy_clusters_2022_05.fa \
-    --bfd_database_path=$database_dir/AF3/bfd-first_non_consensus_sequences.fasta \
-    --uniprot_database_path=$database_dir/AF3/uniprot_all_2021_04.fasta \
-    --pdb_seqres_database_path=$database_dir/AF3/pdb_seqres_2022_09_28.fasta \
-    --template_mmcif_dir=$database_dir/AF3/mmcif_files \
-    --obsolete_pdbs_path=$database_dir/obsolete_pdbs/obsolete.dat \
-    --uniclust30_database_path=$database_dir/uniclust30/uniclust30_2018_08/uniclust30_2018_08 \
+    --uniref90_database_path=${database_dir}AF3/uniref90_2022_05.fa \
+    --mgnify_database_path=${database_dir}AF3/mgy_clusters_2022_05.fa \
+    --bfd_database_path=${database_dir}AF3/bfd-first_non_consensus_sequences.fasta \
+    --uniprot_database_path=${database_dir}AF3/uniprot_all_2021_04.fasta \
+    --pdb_seqres_database_path=${database_dir}AF3/pdb_seqres_2022_09_28.fasta \
+    --template_mmcif_dir=${database_dir}AF3/mmcif_files \
+    --obsolete_pdbs_path=${database_dir}obsolete_pdbs/obsolete.dat \
+    --uniclust30_database_path=${database_dir}uniclust30/uniclust30_2018_08/uniclust30_2018_08 \
     --use_precomputed_msas=True
 
 echo "Starting prediction..."
