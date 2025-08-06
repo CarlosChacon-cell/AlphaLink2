@@ -17,7 +17,7 @@ python /apps/AlphaLink/AlphaLink2/unifold/homo_search.py \
     --uniref90_database_path=${database_dir}AF3/uniref90_2022_05.fa \
     --mgnify_database_path=${database_dir}AF3/mgy_clusters_2022_05.fa \
     --small_bfd_database_path=${database_dir}AF3/bfd-first_non_consensus_sequences.fasta \
-    --uniprot_database_path=${database_dir}AF3/uniprot_all_2021_04.fasta \
+    --uniprot_database_path=${database_dir}AF3/uniprot_all_2021_04.fa \
     --pdb_seqres_database_path=${database_dir}AF3/pdb_seqres_2022_09_28.fasta \
     --template_mmcif_dir=${database_dir}AF3/mmcif_files \
     --obsolete_pdbs_path=${database_dir}obsolete_pdbs/obsolete.dat \
