@@ -21,6 +21,7 @@ python /apps/AlphaLink/AlphaLink2/unifold/homo_search.py \
     --pdb_seqres_database_path=$database_dir/AF3/pdb_seqres_2022_09_28.fasta \
     --template_mmcif_dir=$database_dir/AF3/mmcif_files \
     --obsolete_pdbs_path=$database_dir/obsolete_pdbs/obsolete.dat \
+    --uniclust30_database_path=$database_dir/uniclust30/uniclust30_2018_08/uniclust30_2018_08 \
     --use_precomputed_msas=True
 
 echo "Starting prediction..."

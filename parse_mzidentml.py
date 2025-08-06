@@ -31,8 +31,8 @@ def main():
     sequence_chain_mapping = {}
     with open(fname+'.fasta', 'w') as f:
         for sequence, chain in zip(result['sequences'], chains):
-            f.write(f'>{chain}|{sequence['id']}\n')
-            f.write(f'{sequence['sequence']}\n')
+            f.write(f'>{chain}|{sequence["id"]}\n')
+            f.write(f'{sequence["sequence"]}\n')
             sequence_chain_mapping[sequence['id']] = chain
 
 
