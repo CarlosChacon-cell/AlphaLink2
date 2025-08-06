@@ -20,7 +20,7 @@ python /apps/AlphaLink/AlphaLink2/unifold/homo_search.py \
     --uniprot_database_path=$database_dir/AF3/uniprot_all_2021_04.fasta \
     --pdb_seqres_database_path=$database_dir/AF3/pdb_seqres_2022_09_28.fasta \
     --template_mmcif_dir=$database_dir/AF3/mmcif_files \
-    --obsolete_pdbs_path=$database_dir/obsolete/obsolete.dat \
+    --obsolete_pdbs_path=$database_dir/obsolete_pdbs/obsolete.dat \
     --use_precomputed_msas=True
 
 echo "Starting prediction..."
