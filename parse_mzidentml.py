@@ -42,7 +42,7 @@ def main():
                 continue
             if not link['prot2'] in sequence_chain_mapping:
                 continue
-            f.write(f'{link['pos1']} {sequence_chain_mapping[link['prot1']]} {link['pos2']} {sequence_chain_mapping[link['prot2']]} {args.fdr}\n')
+            f.write(f'{link["pos1"]} {sequence_chain_mapping[link["prot1"]]} {link["pos2"]} {sequence_chain_mapping[link["prot2"]]} {args.fdr}\n')
 
 if __name__ == "__main__":
     main()

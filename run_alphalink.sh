@@ -33,7 +33,7 @@ python /apps/AlphaLink/AlphaLink2/inference.py \
 	--data_dir=$output_dir_base \
 	--target_name=$target_name \
 	--output_dir=$output_dir_base \
-    	--crosslinks=$crosslinks \
+    --crosslinks=$crosslinks \
 	--bf16 \
 	--use_uniprot \
         --max_recycling_iters=$recycling_iterations \
