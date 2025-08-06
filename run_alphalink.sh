@@ -23,7 +23,7 @@ python /apps/AlphaLink/AlphaLink2/unifold/homo_search.py \
     --obsolete_pdbs_path=${database_dir}obsolete_pdbs/obsolete.dat \
     # --uniclust30_database_path=${database_dir}uniclust30/uniclust30_2018_08/uniclust30_2018_08 \
     --use_precomputed_msas=True \
-    --db_preset reduced_dbs 
+    --db_preset=reduced_dbs 
 
 echo "Starting prediction..."
 fasta_file=$(basename $fasta_path)
