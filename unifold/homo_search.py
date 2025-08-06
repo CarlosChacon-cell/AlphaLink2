@@ -315,7 +315,7 @@ if __name__ == "__main__":
             "mgnify_database_path",
             "template_mmcif_dir",
             "max_template_date",
-            "obsolete_pdbs_path",
+            # "obsolete_pdbs_path",
         ]
     )
 
