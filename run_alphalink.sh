@@ -14,7 +14,7 @@ python /apps/AlphaLink/AlphaLink2/unifold/homo_search.py \
     --fasta_path=$fasta_path \
     --max_template_date=$max_template_date \
     --output_dir=$output_dir_base  \
-    --uniref90_database_path=$database_dir/AF3/uniref90_2022_05.fasta \
+    --uniref90_database_path=$database_dir/AF3/uniref90_2022_05.fa \
     --mgnify_database_path=$database_dir/AF3/mgy_clusters_2022_05.fa \
     --bfd_database_path=$database_dir/AF3/bfd-first_non_consensus_sequences.fasta \
     --uniprot_database_path=$database_dir/AF3/uniprot_all_2021_04.fasta \
