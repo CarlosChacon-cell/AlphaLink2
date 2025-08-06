@@ -227,9 +227,9 @@ def main(argv):
     use_small_bfd = FLAGS.db_preset == "reduced_dbs"
     _check_flag("small_bfd_database_path", "db_preset", should_be_set=use_small_bfd)
     _check_flag("bfd_database_path", "db_preset", should_be_set=not use_small_bfd)
-    _check_flag(
-        "uniclust30_database_path", "db_preset", should_be_set=not use_small_bfd
-    )
+    # _check_flag(
+    #     "uniclust30_database_path", "db_preset", should_be_set=not use_small_bfd
+    # )
 
     template_searcher = hmmsearch.Hmmsearch(
         binary_path=FLAGS.hmmsearch_binary_path,
@@ -252,7 +252,7 @@ def main(argv):
         uniref90_database_path=FLAGS.uniref90_database_path,
         mgnify_database_path=FLAGS.mgnify_database_path,
         bfd_database_path=FLAGS.bfd_database_path,
-        uniclust30_database_path=FLAGS.uniclust30_database_path,
+        # uniclust30_database_path=FLAGS.uniclust30_database_path,
         small_bfd_database_path=FLAGS.small_bfd_database_path,
         uniprot_database_path=FLAGS.uniprot_database_path,
         template_searcher=template_searcher,
