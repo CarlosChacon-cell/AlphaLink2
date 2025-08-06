@@ -110,12 +110,12 @@ flags.DEFINE_string(
     "Maximum template release date to consider. Important if folding "
     "historical test sets.",
 )
-flags.DEFINE_string(
-    "obsolete_pdbs_path",
-    None,
-    "Path to file containing a mapping from obsolete PDB IDs to the PDB IDs "
-    "of their replacements.",
-)
+# flags.DEFINE_string(
+#     "obsolete_pdbs_path",
+#     None,
+#     "Path to file containing a mapping from obsolete PDB IDs to the PDB IDs "
+#     "of their replacements.",
+# )
 flags.DEFINE_enum(
     "db_preset",
     "full_dbs",
@@ -242,8 +242,8 @@ def main(argv):
         max_template_date=FLAGS.max_template_date,
         max_hits=MAX_TEMPLATE_HITS,
         kalign_binary_path=FLAGS.kalign_binary_path,
-        release_dates_path=None,
-        obsolete_pdbs_path=FLAGS.obsolete_pdbs_path,
+        release_dates_path=None
+        # obsolete_pdbs_path=FLAGS.obsolete_pdbs_path,
     )
 
     data_pipeline = pipeline.DataPipeline(
